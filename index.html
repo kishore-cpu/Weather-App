@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" id="city-input" placeholder="Enter city name">
+        <button id="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+
+    <div class="weather-card clear">
+        <div class="header">
+            <h1 id="city-name">New York, NY</h1>
+            <p id="date-time">Sunday, November 30, 10:58 AM</p>
+        </div>
+
+        <div class="main-info">
+            <i class="fas fa-sun weather-icon" id="weather-icon"></i>
+            <div class="temperature">
+                <span id="temp">25</span><span class="unit">°C</span>
+            </div>
+            <p id="description">Clear Sky</p>
+        </div>
+
+        <div class="details-grid">
+            <div class="detail-item">
+                <i class="fas fa-wind"></i>
+                <span id="wind-speed">5 km/h</span>
+                <small>Wind</small>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-tint"></i>
+                <span id="humidity">40%</span>
+                <small>Humidity</small>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-cloud"></i>
+                <span id="pressure">1012 hPa</span>
+                <small>Pressure</small>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-thermometer-half"></i>
+                <span id="feels-like">24°C</span>
+                <small>Feels Like</small>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
